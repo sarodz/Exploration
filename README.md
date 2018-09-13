@@ -8,6 +8,5 @@ This repository includes notebooks/projects that I work on in my spare time.
 		* 1_FC-CNN: My experiments with applying the convolution operator to time series by comparing the performance of Fully-Connected NN with Convolutional NN.
 		* 2_Embed-OneHot: My experiments with incorporating seasonal information to time series using one-hot encoding and embeddings.		
 	* Other Files:
-		* static: Folder that contains HTML version of the notebooks, allowing readers to view them on a mobile device.
 		* diet.csv: The data used for the experiments.
 		* NeuralNetworks.py: Code used for the experiments.
