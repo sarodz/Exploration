@@ -1,8 +1,13 @@
 # Exploration
 
-Includes notebooks that I work on in my spare time.
+This repository includes notebooks/projects that I work on in my spare time.
 
 ## Contents
 * *trendPredict*: Predicting usage of the word "diet" using timeseries data. (My initial attempts with PyTorch) 
-	* 1_FC-CNN: Notebook compares the performance of fully connected network against a NN that uses convolution.
-	* 2_Embed-OneHot: Notebook compares performances of one hot encodding and embeddings to represent seasonality.
+	* Notebooks:
+		* 1_FC-CNN: My experiments with applying the convolution operator to time series by comparing the performance of Fully-Connected NN with Convolutional NN.
+		* 2_Embed-OneHot: My experiments with incorporating seasonal information to time series using one-hot encoding and embeddings.		
+	* Other Files:
+		* static: Folder that contains HTML version of the notebooks, allowing readers to view them on a mobile device.
+		* diet.csv: The data used for the experiments.
+		* NeuralNetworks.py: Code used for the experiments.
