@@ -46,17 +46,18 @@ class Preprocessing:
 
         inp = np.zeros(shape=(rows, previous+1+enriched))
         for i in range(0, previous+1):
-            inp[list(range(rows-i)),i] = data[i:,0].reshape(-1,rows-i)
+            inp[list(range(rows-i)),i] = data[i:,0]
         
         if enriched > 0:
             for i in range(enriched):
                 inp[:,previous+1+i] = data[:,i+1] 
 
         out = np.zeros(shape=(rows, future))
-        out[list(range(rows-previous-future)), 0] = data[(previous+future):,0].reshape(-1)
+        for i in range(0, future):
+            out[list(range(rows-i-previous-1)), i] = data[previous+1+i:,0]
             
-        inp = inp[:-(i+future)]
-        out = out[:-(i+future)]
+        inp = inp[:-previous-1]
+        out = out[:-previous-1]
 
         raw = [(from_numpy(inp[j]), from_numpy(out[j])) for j in range(inp.shape[0])]
         return raw
