@@ -10,3 +10,4 @@ This repository includes notebooks/projects that I work on in my spare time.
 	* Other Files:
 		* diet.csv: The data used for the experiments.
 		* NeuralNetworks.py: Code used for the experiments.
+* *flower*: Side project. More details later.
